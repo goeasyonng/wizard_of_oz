@@ -6,6 +6,7 @@ export default function BookQuiz() {
       const target = e.target.value;
       console.log(target);
    };
+
    return (
       <div className='book'>
          <div className='book__cover page'>
