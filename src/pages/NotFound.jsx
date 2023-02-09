@@ -1,9 +1,8 @@
-import React, { useRouteError } from 'react';
+import { useRouteError } from 'react-router-dom';
 
-export default function NotFound() {
+export default function ErrorPage() {
    const error = useRouteError();
-   console.log(error);
-
+   console.error(error);
    return (
       <div id='error-page'>
          <h1>이런..!!</h1>
