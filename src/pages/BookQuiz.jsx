@@ -8,7 +8,6 @@ export default function BookQuiz() {
    };
    return (
       <div className='book'>
-         {/* page1 front*/}
          <div className='book__cover page'>
             <h1 className='content__title'>오즈와 마법사로 알아보는 개발자 성향을 알아보자..</h1>
             <div className='book__typewriter'>
