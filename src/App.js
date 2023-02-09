@@ -1,25 +1,26 @@
-import logo from "./logo.svg";
-import "./App.css";
+import './App.css';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import BookQuiz from './pages/BookQuiz';
+import NotFound from './pages/NotFound';
+import Question from './pages/Question';
 
+// 라우터 사용
+const router = createBrowserRouter([
+   {
+      path: '/',
+      element: <BookQuiz />,
+      errorElement: <NotFound />,
+   },
+   {
+      path: '/Question',
+      element: <Question />,
+   },
+]);
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <>
+         <RouterProvider router={router} />
+      </>
+   );
 }
-
 export default App;
