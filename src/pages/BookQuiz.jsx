@@ -1,12 +1,15 @@
 import React from 'react';
-import Quiz from '../components/Quiz';
+import { Link } from 'react-router-dom';
+// import QuizLists from './QuizLists';
+// import './BookQuiz.css';
 
 export default function BookQuiz() {
    // 커버 이미지 url
    // const imgUrl = '';
 
    const handleClick = e => {
-      console.log(e);
+      const target = e.target.value;
+      console.log(target);
    };
    return (
       <div className='book'>
@@ -17,11 +20,11 @@ export default function BookQuiz() {
                <p>이야기를 시작하겠습니다..</p>
             </div>
 
-            <div className='book__guide'>
+            <Link className='book__guide' to='Qeiz/:quizId'>
                <button type='button' onClick={handleClick}>
                   클릭하기!
                </button>
-            </div>
+            </Link>
 
             {/* page2 back */}
             <div className='book__cover page'>
@@ -36,7 +39,6 @@ export default function BookQuiz() {
                   <button>2.</button>
                </div>
             </div> */}
-            <Quiz />
          </div>
       </div>
    );
