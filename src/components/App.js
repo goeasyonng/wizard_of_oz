@@ -4,7 +4,6 @@ import BookQuiz from "../pages/StartPage";
 import NotFound from "../pages/NotFound";
 import Question from "../pages/QuestionPage";
 
-// 라우터 사용
 const router = createBrowserRouter([
   {
     path: "/",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // request react-router-dom librasy install
 
-export default function BookQuiz() {
+function BookQuiz() {
   const handleClick = (e) => {
     const target = e.target.value;
     console.log(target);
@@ -28,3 +28,5 @@ export default function BookQuiz() {
     </div>
   );
 }
+
+export default BookQuiz;

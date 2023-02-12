@@ -3,8 +3,16 @@ export const questions = [
     questionText:
       "놀란 가슴을 진정 시키고 밖을 나와 보니 당신 눈 앞에는 환하고 아름다운 숲이 펼쳐져 있다 .이 때 당신의 반응은?",
     answerOptions: [
-      { answerText: "우와... 여기 뭐야? 겁나 이쁘네?", isCorrect: true },
-      { answerText: "뭐지... 여기 어디야? 집갈래..", isCorrect: false },
+      {
+        answerText: "우와... 여기 뭐야? 겁나 이쁘네?",
+        resultText: "결과문장1.1",
+        option: "front",
+      },
+      {
+        answerText: "뭐지... 여기 어디야? 집갈래..",
+        resultText: "결과문장1.2",
+        option: "back",
+      },
     ],
   },
   {
@@ -13,11 +21,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "꺅!! 어떻게 사람이 깔렸어요! 도와주세요!",
-        isCorrect: true,
+        resultText: "결과문장2.1",
+        option: "front",
       },
       {
         answerText: "사람이 깔렸지만.. 구두가 예쁘네? 내가 신어야지",
-        isCorrect: false,
+        resultText: "결과문장2.2",
+        option: "back",
       },
     ],
   },
@@ -27,11 +37,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "마법사? 우와 나 마법볼수 있는거야? 재밌겠네?",
-        isCorrect: true,
+        resultText: "결과문장3.1",
+        option: "front",
       },
       {
         answerText: "음.. 나는 마법도 안좋아하고 힘든거 싫은데..",
-        isCorrect: false,
+        resultText: "결과문장3.2",
+        option: "back",
       },
     ],
   },
@@ -41,12 +53,14 @@ export const questions = [
     answerOptions: [
       {
         answerText: "그래? 나랑 같이 다니면서 마법사 만나면 만들어달라 하자",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
       {
         answerText:
           "지푸라기가 뇌 가져서 뭐하게? 계획이 있으니까 일단 따라와봐",
-        isCorrect: false,
+        resultText: "결과문장1",
+        option: "back",
       },
     ],
   },
@@ -56,9 +70,14 @@ export const questions = [
     answerOptions: [
       {
         answerText: "어이구야.. 힘들었겠다.. 나는 절대 가만히 못있어",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
-      { answerText: "가만히만 있으면 허리 안아팠니?", isCorrect: false },
+      {
+        answerText: "가만히만 있으면 허리 안아팠니?",
+        resultText: "결과문장1",
+        option: "back",
+      },
     ],
   },
   {
@@ -67,9 +86,14 @@ export const questions = [
     answerOptions: [
       {
         answerText: "너는 보기와 달리 겁이 많구나!! 그럴 수 있지",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
-      { answerText: "너 왜이리 겁이많니? 사자 맞아?", isCorrect: false },
+      {
+        answerText: "너 왜이리 겁이많니? 사자 맞아?",
+        resultText: "결과문장1",
+        option: "back",
+      },
     ],
   },
   {
@@ -78,9 +102,14 @@ export const questions = [
     answerOptions: [
       {
         answerText: "울고있는 사자를 진정시키며 사자의 감정에 공감한다.",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
-      { answerText: "겁을 극복할 해결책을 생각한다.", isCorrect: false },
+      {
+        answerText: "겁을 극복할 해결책을 생각한다.",
+        resultText: "결과문장1",
+        option: "back",
+      },
     ],
   },
   {
@@ -90,9 +119,14 @@ export const questions = [
       {
         answerText:
           "확률적으로 잠이 쏟아지기전 나갈 수 없다고 판단해 누가 구해줄수 있도록 의연히 기다린다. ",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
-      { answerText: "자신의 선택을 후회하며 자포자기 한다.", isCorrect: false },
+      {
+        answerText: "자신의 선택을 후회하며 자포자기 한다.",
+        resultText: "결과문장1",
+        option: "back",
+      },
     ],
   },
   {
@@ -101,11 +135,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "당장 가장 먼 곳으로 해외 여행을 떠나볼까?",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
       {
         answerText: "가장 효율적으로 부려먹을 수 있는 방법을 찾아 볼까?",
-        isCorrect: false,
+        resultText: "결과문장1",
+        option: "back",
       },
     ],
   },
@@ -115,22 +151,29 @@ export const questions = [
     answerOptions: [
       {
         answerText: "우와.. 세상이 온통 초록색이다~ (받아들인다)",
-        isCorrect: true,
+        resultText: "결과문장1",
+        option: "front",
       },
       {
         answerText: "뭐지.. 내눈이 잘못되었나.. (받아들이지 못한다)",
-        isCorrect: false,
+        resultText: "결과문장1",
+        option: "back",
       },
     ],
   },
   {
-    questionText: "Q11. 당신이 마주한 오즈의 모습은?",
+    questionText: "당신이 마주한 오즈의 모습은?",
     answerOptions: [
-      { answerText: "몸은 없고 얼굴만 있는 오즈", isCorrect: true },
+      {
+        answerText: "몸은 없고 얼굴만 있는 오즈",
+        resultText: "결과문장1",
+        option: "front",
+      },
       {
         answerText:
           "뾰족하고 날카로운 모자와 신발, 어두운 색의 코트를 걸친 늙은 마녀",
-        isCorrect: false,
+        resultText: "결과문장1",
+        option: "back",
       },
     ],
   },
@@ -138,10 +181,15 @@ export const questions = [
     questionText:
       "당신은 드디어 집으로 돌아갈 수 있게 되었다. 돌아간다면 무엇을 할 것인가?",
     answerOptions: [
-      { answerText: "드디어 집으로 돌아간다. 빨리 보내줘!", isCorrect: true },
+      {
+        answerText: "드디어 집으로 돌아간다. 빨리 보내줘!",
+        resultText: "결과문장1",
+        option: "front",
+      },
       {
         answerText: "오즈의 나라에서 신분 세탁도하고 새로운 삶을 살겠다.",
-        isCorrect: false,
+        resultText: "결과문장1",
+        option: "back",
       },
     ],
   },
