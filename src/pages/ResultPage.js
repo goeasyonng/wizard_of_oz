@@ -85,9 +85,7 @@ function ResultPage() {
                   {/* 선택 */}
                   <div>
                      {questions[quizIndex].answerOptions.map(item => (
-                        <button className='aabtn' onClick={() => onClick(item.option)}>
-                           {item.answerText}
-                        </button>
+                        <button onClick={() => onClick(item.option)}>{item.answerText}</button>
                      ))}
                   </div>
                </section>
