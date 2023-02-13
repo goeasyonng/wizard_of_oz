@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { questions } from "../data/QuizList";
+import "../CSS/result.css";
+
 
 function Questions() {
   const [quizIndex, setQuizIndex] = useState(0); //현재 문제 페이지를 세는 변수
@@ -38,37 +40,83 @@ function Questions() {
 
   return (
     <>
+    {/* result  */}
+    <div className="container">
       <div className="book__text page">
         {endPage ? (
           <section>
             {frontCount >= backCount ? (
               frontCount > backCount ? (
+                
                 <div>
-                  <div>당신에게 적합한 개발 영역은 프론트엔드입니다.</div>
-                  <div>
+                  <div className="title_1">
+                  당신에게 적합한 개발 영역은 ... 
+                 </div>
+
+                  <div className="img_box">
+                    <div className="result_img_1">
+                   </div>
+                 </div>
+                 
+                  <div className="title_2">프론트엔드입니다</div>
+                  <div className="txt_box">
+                   <div className="result_txt">
                     {result.map((item) => (
-                      <div>{item}</div>
+                      <div>
+                        {<li>{item}</li>}
+                      </div>
                     ))}
+                    </div>
                   </div>
                 </div>
               ) : (
                 <div>
-                  <div>당신에게 적합한 개발 영역은 풀스택입니다.</div>
-                  <div>
+                   <div className="title_1">
+                  당신에게 적합한 개발 영역은 ... 
+                 </div>
+
+                  <div className="img_box">
+                    <div className="result_img_2">
+                   </div>
+                 </div>
+
+                  <div className="title_2">풀스택입니다</div>
+                  <div className="txt_box">
+                   <div className="result_txt">
                     {result.map((item) => (
-                      <div>{item}</div>
+                      <div>
+                        {<li>{item}</li>}
+                      </div>
                     ))}
+                    </div>
                   </div>
                 </div>
               )
             ) : (
+              
               <div>
-                <div>당신에게 적합한 개발 영역은 백엔드입니다.</div>
-                <div>
-                  {result.map((item) => (
-                    <div>{item}</div>
-                  ))}
+
+                <div className="title_1">
+                  당신에게 적합한 개발 영역은 ... 
+                 </div>
+
+                <div className="img_box">
+                  <div className="result_img_3">
+
+                  </div>
                 </div>
+
+                
+                <div className="title_2">백엔드입니다</div>
+                <div className="txt_box">
+                   <div className="result_txt">
+                    {result.map((item) => (
+                      <div>
+                        {<li>{item}</li>}
+                        </div>
+                    ))}
+                    </div>
+                  </div>
               </div>
             )}
           </section>
@@ -79,18 +127,20 @@ function Questions() {
               {/* <p>
                 {quizIndex + 1}/ {questions.length}
               </p> */}
-              <span>{questions[quizIndex].questionText}</span>
+              <span>{questions[quizIndex].questionText}</span>    
             </div>
             {/* 선택 */}
-            <div>
+             <div>   
               {questions[quizIndex].answerOptions.map((item) => (
                 <button onClick={() => onClick(item.option)}>
-                  {item.answerText}
+                  {item.answerText}   
                 </button>
               ))}
-            </div>
+              </div>
           </section>
         )}
+              
+        </div>
       </div>
     </>
   );
