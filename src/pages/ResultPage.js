@@ -2,13 +2,17 @@ import React, { useState } from "react";
 import { questions } from "../data/QuizList";
 import "../CSS/result.css";
 
-
 function Questions() {
   const [quizIndex, setQuizIndex] = useState(0); //현재 문제 페이지를 세는 변수
   const [endPage, setEndPage] = useState(false); //문제 페이지의 끝에서 True로 바뀌게 하는 변수
   const [frontCount, setFrontCount] = useState(0); //선택지 1을 누른 횟수를 세는 변수
   const [backCount, setBackCount] = useState(0); //선택지 2를 누른 횟수를 세는 변수
   const [result, setResult] = useState([]); //선택에 따라 해당 선택에 따른 각각 다른 문장을 담아두는 변수
+  const [showResult, setShowResult] = useState(false);
+
+   const tick = setTimeout(() => {
+     setShowResult(true);
+   }, 3000);
 
   //버튼 클릭 이벤트가 발생했을 떄 시행되는 훅
   const onClick = (option) => {
@@ -37,10 +41,12 @@ function Questions() {
     "result",
     result.map((item) => <text>{item}</text>)
   );
+ 
 
   return (
     <>
       {/* result  */}
+ 
       <div className="container">
         <div className="book__text page">
           {endPage ? (
@@ -111,7 +117,9 @@ function Questions() {
                 {/* <p>
                 {quizIndex + 1}/ {questions.length}
               </p> */}
-                <span >{questions[quizIndex].questionText}</span>
+                <span className="question_title">
+                  {questions[quizIndex].questionText}
+                </span>
               </div>
               {/* 선택 */}
               <div className="questions-layout">
