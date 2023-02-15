@@ -4,8 +4,6 @@ import { useNavigate } from "react-router-dom";
 import "../CSS/question.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 
-
-
 function Questions({ getData }) {
   const [quizIndex, setQuizIndex] = useState(0);
   const [endPage, setEndPage] = useState(false);
@@ -14,7 +12,6 @@ function Questions({ getData }) {
   const [result, setResult] = useState([]);
   const [kind, setKind] = useState("");
   const navigate = useNavigate();
-
 
   const onClick = (option) => {
     if (option == "front") {
