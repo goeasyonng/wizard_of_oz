@@ -67,7 +67,7 @@ h1 {
   font-size: 45px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 821px) {
   .book__coverpage {
     /* background-color: #222; */
     background-image: url(../image/background.jpg);
@@ -85,7 +85,7 @@ h1 {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 822px) {
   .book__coverpage {
     background-color: #222;
     color: rgb(253, 253, 253);
