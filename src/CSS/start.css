@@ -21,37 +21,42 @@
    color: white;
 }
 
-.start_button {
-   font-family: 'Roboto';
-   min-width: 375px;
-   width: 100%;
-   border: #fff;
-   padding: 10px;
-   border-radius: 10px;
-   margin-top: 16px;
-   margin-bottom: 10px;
-   text-align: center;
-   background: #ffff;
-   color: #444;
-   cursor: pointer;
-   font-size: 20px;
-   font-weight: bold;
+.start_button{
+    
+    font-family: 'Roboto';
+     min-width: 375px;
+    width:100%;
+    border:#fff;
+    padding:10px;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #ffff;
+    color: #444;
+    cursor:pointer;
+    font-size: 20px;
+    font-weight: bold;
 }
-.App-logo {
-   max-width: 150px;
+.App-logo{
+    max-width:150px;
 }
-.of {
-   font-size: 40px;
+.of{
+   font-size: 27px; 
 }
-.oz {
-   font-size: 60px;
+.oz{
+    font-size:55px;
 }
-.oz_logo {
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
+.oz_logo{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
 }
-h1 {
-   margin-bottom: 10px;
-   font-size: 45px;
+h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+
+}
+.start_info{
+    font-size: 20px;
 }
