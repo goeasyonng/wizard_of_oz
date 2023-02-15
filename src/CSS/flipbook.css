@@ -98,19 +98,20 @@
 }
 
 .book:hover .lastPage {
-   transition-duration: 3s;
+   transition-duration: 3.8s;
 }
 
 /* z-index 설정 */
 
 .coverFront {
-   transition: all 4s;
+   transition: all 3.5s;
+   transition-duration: 5s;
    z-index: 5;
    transform-origin: center left;
 }
 
 .coverBack {
-   z-index: -2;
+   z-index: -3;
 }
 
 .page {
@@ -118,16 +119,17 @@
 }
 
 .imagePage {
-   z-index: 0;
+   z-index: 1;
 }
 
 .lastPage {
-   z-index: -1;
+   z-index: -2;
 }
 
 /* 책 전체 호버 시 */
 .book:hover .coverFront {
    z-index: -1;
+   transition-duration: 4s;
    transform: rotateX(22deg) rotateY(-180deg);
 }
 
@@ -163,22 +165,22 @@
    transform: rotateX(22deg);
    transform-origin: center left;
    background-color: #fff;
-   transition: all 5s;
+   transition-duration: 2.5s;
    border-left: 1px solid rgba(0, 0, 0, 0.079);
-   z-index: -3;
+   z-index: -2;
 }
 
 .book:hover .imagePage {
-   z-index: 5;
+   z-index: 7;
    position: absolute;
-   transition-duration: 6s;
+   transition-duration: 5s;
    transform: rotateX(22deg) rotateY(-180deg);
 }
 
 .rightPage {
    position: absolute;
    right: 0%;
-   z-index: -1;
+   z-index: -3;
    width: 400px;
    height: 530px;
    transition-duration: 4s;
