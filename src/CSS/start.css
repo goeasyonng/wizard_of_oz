@@ -1,28 +1,25 @@
-@import "https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css";
-
+@import 'https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css';
 
 @font-face {
-    font-family: 'SANGJUGyeongcheonIsland';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+   font-family: 'SANGJUGyeongcheonIsland';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
-.book__coverpage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin:auto; 
-    font-family:'SANGJUGyeongcheonIsland';
-    font-size: 25px;
-    background-color: #222;
-    color: white;
-    
+.book__coverpage {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: auto;
+   font-family: 'SANGJUGyeongcheonIsland';
+   font-size: 25px;
+   background-color: #222;
+   color: white;
 }
-
 
 .start_button{
     
@@ -58,6 +55,7 @@
 h1{
     margin-bottom: 10px;
     font-size: 40px;
+
 }
 .start_info{
     font-size: 20px;
