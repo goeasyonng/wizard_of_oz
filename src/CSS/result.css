@@ -15,7 +15,7 @@
   padding: 30px;
   width: 100%;
   font-weight: bold;
-  color: rgb(9, 7, 3);
+  color: rgb(97, 68, 21);
   font-family: "SANGJUGyeongcheonIsland";
 }
 
@@ -69,7 +69,6 @@
 }
 
 body {
-  /* background-color: #6d95e9; */
   background-image: url(../image/background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -103,8 +102,8 @@ li {
 .shareBtn {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
 }
+
 .shareContainer {
   display: flex;
   flex-direction: column;
@@ -114,6 +113,6 @@ li {
   border-radius: 20px;
   width: 100%;
   padding: 20px;
-  width: 90%;
+  width: 95%;
   overflow: inherit;
 }

@@ -18,6 +18,13 @@
   margin: auto;
   font-family: "SANGJUGyeongcheonIsland";
   font-size: 25px;
+  background-image: url(../image/background.jpg);
+  background-repeat: no-repeat;
+  /* background-position: bottom; */
+  background-size: cover;
+  /* background-size: auto 100%; */
+  background-attachment: fixed;
+  color: rgb(58, 24, 24);
 }
 .content__title {
   display: flex;
@@ -39,8 +46,7 @@
   border: #fff;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 16px;
-  margin-bottom: 10px;
+  margin: 10px 0px;
   text-align: center;
   background: #ffff;
   color: #444;
@@ -52,9 +58,11 @@
   max-width: 150px;
 }
 .of {
+  margin-top: 5px;
   font-size: 40px;
 }
 .oz {
+  margin-top: 5px;
   font-size: 60px;
 }
 .oz_logo {
@@ -66,17 +74,17 @@ h1 {
   margin-bottom: 10px;
   font-size: 45px;
 }
+.users {
+  margin-top: 30px;
+  font-size: large;
+  color: orange;
+  font-weight: bold;
+  padding: 10px;
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 3px;
+}
 
 @media (max-width: 821px) {
-  .book__coverpage {
-    /* background-color: #222; */
-    background-image: url(../image/background.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: rgb(58, 24, 24);
-  }
   .book__guide {
     margin-top: 150px;
   }
@@ -86,14 +94,14 @@ h1 {
 }
 
 @media (min-width: 822px) {
-  .book__coverpage {
-    background-color: #222;
-    color: rgb(253, 253, 253);
-  }
   .book__guide {
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+  .start_button {
+    background-color: rgb(58, 24, 24);
+    color: white;
   }
   .brand_logo {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }

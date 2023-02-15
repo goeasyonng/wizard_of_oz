@@ -5,7 +5,11 @@
   .book {
     position: relative;
     height: 100vh;
-    background: #e0e4ee;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
     perspective: 1000px;
     overflow: hidden;
   }
@@ -243,13 +247,13 @@
     background-color: #fff;
     border-radius: 7px;
     transition: all 0.2s;
-    box-shadow: 0px 5px 0px 0px #007144;
+    box-shadow: 0px 5px 0px 0px #b7b7b7;
   }
 
   .question__btn:hover {
     margin-top: 20px;
     margin-bottom: 5px;
-    box-shadow: 0px 0px 0px 0px #007144;
+    box-shadow: 0px 0px 0px 0px #a5a7a6;
   }
 
   .imgs {

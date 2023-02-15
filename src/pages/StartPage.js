@@ -1,11 +1,29 @@
-import React from "react";
-import { Link } from "react-router-dom"; // request react-router-dom librasy install
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { doc, getDoc, setDoc } from "firebase/firestore";
+import { db } from "../fbase";
 import "../CSS/start.css";
 
 export default function BookQuiz() {
+  const [total, setTotal] = useState(0);
+
+  const getData = async () => {
+    const docRef = doc(db, "users", "count");
+    const docSnap = await getDoc(docRef);
+    const count = docSnap.data().count;
+    setTotal(count);
+  };
+  useEffect(() => {
+    getData();
+    console.log("total" + total);
+  }, [total]);
+
   const handleClick = (e) => {
     const target = e.target.value;
     console.log(target);
+    setDoc(doc(db, "users", "count"), {
+      count: total + 1,
+    });
   };
 
   return (
@@ -26,7 +44,7 @@ export default function BookQuiz() {
             시작하기
           </button>
         </Link>
-
+        <p className="users">{total}명이 테스트에 참가 했습니다</p>
         <div className="brand_logo">
           <a href="https://ozcodingschool.com/" target="_blank">
             <button className="oz_logo">
