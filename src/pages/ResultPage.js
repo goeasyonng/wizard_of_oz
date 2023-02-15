@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { questions } from "../data/QuizList";
 import "../CSS/result.css";
@@ -73,26 +74,22 @@ function Questions() {
     });
   };
 
-  //버튼 클릭 이벤트가 발생했을 떄 시행되는 훅
-  const onClick = (option) => {
-    //선택에 따른 횟수와 결과문장을 담아두는 함수
-    if (option == "front") {
-      setFrontCount(frontCount + 1);
-      setResult([...result, questions[quizIndex].answerOptions[0].resultText]);
-    } else {
-      setBackCount(backCount + 1);
-      setResult([...result, questions[quizIndex].answerOptions[1].resultText]);
-    }
+      //총 페이지를 세어 마지막을 나타내는 함수
+      const nextQuiz = quizIndex + 1;
 
-    //총 페이지를 세어 마지막을 나타내는 함수
-    const nextQuiz = quizIndex + 1;
+      if (nextQuiz < questions.length) {
+         setQuizIndex(nextQuiz);
+      } else {
+         setEndPage(true);
+      }
+   };
 
-    if (nextQuiz < questions.length) {
-      setQuizIndex(nextQuiz);
-    } else {
-      setEndPage(true);
-    }
-  };
+   console.log('frontCount:', frontCount);
+   console.log('backCount:', backCount);
+   console.log(
+      'result',
+      result.map(item => <div>{item}</div>),
+   );
 
   console.log("frontCount:", frontCount);
   console.log("backCount:", backCount);
@@ -234,6 +231,7 @@ function Questions() {
       </div>
     </>
   );
+
 }
 
-export default Questions;
+export default ResultPage;
