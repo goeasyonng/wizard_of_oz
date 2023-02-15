@@ -1,6 +1,5 @@
 import React from 'react';
 import Questions from './ResultPage';
-import Images from '../components/Images';
 import Progress from '../components/Progress';
 import '../CSS/book.css';
 
