@@ -94,36 +94,3 @@ li{
     list-style: none;
     font-size: 16px;
 }
-.answer_button{
-    font-family: 'Roboto';
-    max-width: 360px;
-    width:100%;
-    border:white;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 15px;
-    text-align: center;
-    background: white;
-    color: #666;
-    cursor:pointer;
-    font-size: 12px;
-    font-weight: bold;
-    
-    
- 
-}
-.text__page{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin:auto; 
-    font-family:'SANGJUGyeongcheonIsland';
-    font-size: 20px;
-    background-color: #6D95E9;
-    color: white; 
-    text-align: center;
-    
-}
-
