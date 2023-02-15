@@ -61,6 +61,7 @@ function Questions({ getData }) {
         completed={Math.floor((quizIndex / questions.length) * 100)}
         bgColor="white"
         baseBgColor="#6D95E9"
+        margin="5px"
       />
       ;
       <div className="book__tex__page">
