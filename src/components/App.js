@@ -1,21 +1,36 @@
-// import './App.css';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import BookQuiz from "../pages/StartPage";
 import NotFound from "../pages/NotFound";
 import Question from "../pages/QuestionPage";
+import Result from "../pages/ResultPage";
+import Start from "../pages/StartPage";
+import { useState } from "react";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <BookQuiz />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/Question",
-    element: <Question />,
-  },
-]);
 function App() {
+  const [title, setTitle] = useState("");
+  const [detail, setDetail] = useState([]);
+
+  const getData = (a, b) => {
+    console.log(1234, a, b);
+    setTitle(a);
+    setDetail(b);
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Start />,
+      errorElement: <NotFound />,
+    },
+    {
+      path: "/Question",
+      element: <Question getData={getData} />,
+    },
+    {
+      path: "/Result",
+      element: <Result title={title} detail={detail} />,
+    },
+  ]);
+
   return (
     <>
       <RouterProvider router={router} />
