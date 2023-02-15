@@ -58,10 +58,9 @@ function Questions({ getData }) {
   return (
     <>
       <ProgressBar
-        
         completed={Math.floor((quizIndex / questions.length) * 100)}
-      
-        
+        bgColor="white"
+        baseBgColor="#6D95E9"
       />
       ;
       <div className="book__tex__page">
