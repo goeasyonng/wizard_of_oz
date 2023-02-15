@@ -10,7 +10,7 @@ function App() {
   const [detail, setDetail] = useState([]);
 
   const getData = (a, b) => {
-    console.log(1234, a, b);
+    console.log(a, b);
     setTitle(a);
     setDetail(b);
   };
