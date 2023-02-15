@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { questions } from "../data/QuizList";
 import { useNavigate } from "react-router-dom";
+import "../CSS/question.css";
+import ProgressBar from "@ramonak/react-progress-bar";
 
 function Questions({ getData }) {
   const [quizIndex, setQuizIndex] = useState(0);
@@ -52,7 +54,14 @@ function Questions({ getData }) {
 
   return (
     <>
-      <div className="book__text page">
+      <ProgressBar
+        completed={Math.floor((quizIndex / questions.length) * 100)}
+        bgColor="white"
+        baseBgColor="#6D95E9"
+        margin="5px"
+      />
+      ;
+      <div className="book__tex__page">
         {endPage ? (
           <></>
         ) : (
@@ -62,7 +71,10 @@ function Questions({ getData }) {
             </div>
             <div>
               {questions[quizIndex].answerOptions.map((item) => (
-                <button onClick={() => onClick(item.option)}>
+                <button
+                  className="answer_button"
+                  onClick={() => onClick(item.option)}
+                >
                   {item.answerText}
                 </button>
               ))}
