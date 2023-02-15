@@ -67,7 +67,7 @@ export default function Result({ title, detail }) {
 
   return (
     <div className="container">
-      <div className="book__text page">
+      <div className="book__textpage">
         <div className="img_box">
           <div className="result_img_1"></div>
         </div>
