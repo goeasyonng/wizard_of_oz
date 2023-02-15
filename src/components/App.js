@@ -1,27 +1,40 @@
-// import './App.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-// import ResultPage from '../pages/ResultPage';
-import NotFound from '../pages/NotFound';
-import Question from '../pages/Question';
-import Start from '../pages/StartPage';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import NotFound from "../pages/NotFound";
+import Question from "../pages/QuestionPage";
+import Result from "../pages/ResultPage";
+import Start from "../pages/StartPage";
+import { useState } from "react";
 
-const router = createBrowserRouter([
-   {
-      path: '/',
+function App() {
+  const [title, setTitle] = useState("");
+  const [detail, setDetail] = useState([]);
+
+  const getData = (a, b) => {
+    console.log(1234, a, b);
+    setTitle(a);
+    setDetail(b);
+  };
+
+  const router = createBrowserRouter([
+    {
+      path: "/",
       element: <Start />,
       errorElement: <NotFound />,
-   },
+    },
+    {
+      path: "/Question",
+      element: <Question getData={getData} />,
+    },
+    {
+      path: "/Result",
+      element: <Result title={title} detail={detail} />,
+    },
+  ]);
 
-   {
-      path: '/Question',
-      element: <Question />,
-   },
-]);
-function App() {
-   return (
-      <>
-         <RouterProvider router={router} />
-      </>
-   );
+  return (
+    <>
+      <RouterProvider router={router} />
+    </>
+  );
 }
 export default App;
