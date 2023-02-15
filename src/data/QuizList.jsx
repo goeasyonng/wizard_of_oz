@@ -1,16 +1,16 @@
 export const questions = [
   {
     questionText:
-      "놀란 가슴을 진정 시키고 밖을 나와 보니 당신 눈 앞에는 환하고 아름다운 숲이 펼쳐져 있다 .이 때 당신의 반응은?",
+      "놀란 가슴을 진정 시키고 밖을 나와 보니  당신 눈 앞에는 환하고 아름다운 숲이 펼쳐져 있다 .이 때 당신의 반응은?",
     answerOptions: [
       {
         answerText: "우와... 여기 뭐야? 겁나 이쁘네?",
-        resultText: "개발자를 하면 늘 새로운 환경일거야",
+        resultText: "개발자를 하게되면 늘 새로운 환경을 접할거야!!",
         option: "front",
       },
       {
         answerText: "뭐지... 여기 어디야? 집갈래..",
-        resultText: "개발언어 하나만 배우면 대부분 비슷비슷해",
+        resultText: "개발언어 하나를 배우면 대부분 배우는게 비슷비슷해.",
         option: "back",
       },
     ],
@@ -21,12 +21,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "꺅!! 어떻게 사람이 깔렸어요! 도와주세요!",
-        resultText: "협업할때는 맡은 역할을 잘 수행해내는 팀원의 역할이 어울려",
+        resultText:
+          "협업할때는 맡은 역할을 잘 수행해내는 팀원의 역할이 잘 어울려!!",
         option: "front",
       },
       {
         answerText: "사람이 깔렸지만.. 구두가 예쁘네? 내가 신어야지",
-        resultText: "협업할때는 일을 정해주는 팀장역할이 어울려",
+        resultText: "협업할때는 일을 정해주는 팀장역할이 잘 어울려!!",
         option: "back",
       },
     ],
@@ -37,12 +38,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "마법사? 우와 나 마법볼수 있는거야? 재밌겠네?",
-        resultText: "일단 여러가지를 배우고 길을 정하는게 좋을듯",
+        resultText: "일단 여러가지를 배우고 길을 정해봐도 좋을듯?",
         option: "front",
       },
       {
         answerText: "음.. 나는 마법도 안좋아하고 힘든거 싫은데..",
-        resultText: "일단 목표를 잡고 선택과 집중을 하는게 좋을듯",
+        resultText: "일단 목표를 잡고 선택과 집중을 하는게 좋을듯?",
         option: "back",
       },
     ],
@@ -53,13 +54,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "그래? 나랑 같이 다니면서 마법사 만나면 만들어달라 하자",
-        resultText: "선생님쪽도 나쁘지 않아",
+        resultText: " 선생님 해보는것도 나쁘지 않은데?",
         option: "front",
       },
       {
         answerText:
           "지푸라기가 뇌 가져서 뭐하게? 계획이 있으니까 일단 따라와봐",
-        resultText: "창업쪽도 나쁘지 않아",
+        resultText: "창업쪽도 한번 생각해보는게 어때?",
         option: "back",
       },
     ],
@@ -70,12 +71,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "어이구야.. 힘들었겠다.. 나는 절대 가만히 못있어",
-        resultText: "여러 방식을 다 해봐",
+        resultText: "여러 방식을 다 시도해봐!!",
         option: "front",
       },
       {
         answerText: "등 긁어줄까?",
-        resultText: "한곳만 죽어라 파자",
+        resultText: "두더지 같이 한곳만 죽어라 파자!!",
         option: "back",
       },
     ],
@@ -86,12 +87,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "너는 보기와 달리 겁이 많구나!! 그럴 수 있지",
-        resultText: "일단 해",
+        resultText: "생각한건 일단 해봐!!",
         option: "front",
       },
       {
         answerText: "너 왜이리 겁이많니? 사자 맞아?",
-        resultText: "하기전에 한번만 고민하자",
+        resultText: "하기전에 한번만 고민해보자!!",
         option: "back",
       },
     ],
@@ -102,12 +103,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "겁에 질려 머리가 새하얘진다.",
-        resultText: "아니다 싶으면 그게 맞아",
+        resultText: "아니다.. 싶으면 그게 맞아!!",
         option: "front",
       },
       {
         answerText: "유서를 쓴다.",
-        resultText: "맞다 싶으면 그게 아니야",
+        resultText: "맞다!! 싶으면 그게 아니야..",
         option: "back",
       },
     ],
@@ -119,12 +120,12 @@ export const questions = [
       {
         answerText:
           "확률적으로 잠이 쏟아지기전 나갈 수 없다고 판단해 누가 구해줄수 있도록 의연히 기다린다. ",
-        resultText: "주변의 사람들이 중요해",
+        resultText: "주변의 사람들이 중요하구나!!",
         option: "front",
       },
       {
         answerText: "자신의 선택을 후회하며 자포자기 한다.",
-        resultText: "주변의 사람들을 잘둬",
+        resultText: "주변에 사람들을 잘뒀네!!",
         option: "back",
       },
     ],
@@ -135,12 +136,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "당장 가장 먼 곳으로 해외 여행을 떠나볼까?",
-        resultText: "심심할땐 해외도 가고",
+        resultText: "심심할땐 해외도 가고 밥도 먹고",
         option: "front",
       },
       {
         answerText: "가장 효율적으로 부려먹을 수 있는 방법을 찾아 볼까?",
-        resultText: "심심할땐 다른 부수익도 생각해보고",
+        resultText: "심심할땐 다른 부수익도 한번 생각해봐!!",
         option: "back",
       },
     ],
@@ -151,12 +152,12 @@ export const questions = [
     answerOptions: [
       {
         answerText: "우와.. 세상이 온통 초록색이다~ (받아들인다)",
-        resultText: "이게 왜 안돼? 금지",
+        resultText: "이게 왜 안돼? [금지]",
         option: "front",
       },
       {
         answerText: "뭐지.. 내눈이 잘못되었나.. (받아들이지 못한다)",
-        resultText: "이게 왜 돼? 금지",
+        resultText: "이게 왜 돼? [금지]",
         option: "back",
       },
     ],
@@ -166,13 +167,13 @@ export const questions = [
     answerOptions: [
       {
         answerText: "몸은 없고 얼굴만 있는 오즈",
-        resultText: "상대 눈치는 그만보고",
+        resultText: "상대 눈치는 그만보고..",
         option: "front",
       },
       {
         answerText:
           "뾰족하고 날카로운 모자와 신발, 어두운 색의 코트를 걸친 늙은 마녀",
-        resultText: "상대 눈치좀 보고",
+        resultText: "상대 눈치좀 보고..",
         option: "back",
       },
     ],
@@ -182,13 +183,13 @@ export const questions = [
       "당신은 드디어 집으로 돌아갈 수 있게 되었다. 돌아간다면 무엇을 할 것인가?",
     answerOptions: [
       {
-        answerText: "드디어 집으로 돌아간다. 빨리 보내줘!",
-        resultText: "어쨋든 넌 뭐든 해낼거야",
+        answerText: "드디어 집으로 돌아간다! 빨리 보내줘!!",
+        resultText: "어쨋든 넌 뭐든지 다 해낼거야!!",
         option: "front",
       },
       {
         answerText: "오즈의 나라에서 신분 세탁도하고 새로운 삶을 살겠다.",
-        resultText: "어쨋든 넌 부자가 될거야",
+        resultText: "어쨋든 넌 깊은 사람이 될거야!!",
         option: "back",
       },
     ],
