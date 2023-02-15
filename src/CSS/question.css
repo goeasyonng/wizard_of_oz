@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 
+
 .answer_button{
     font-family: 'Roboto';
     max-width: 360px;
@@ -20,8 +21,9 @@
     background: white;
     color: #666;
     cursor:pointer;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
+    
     
     
  
@@ -40,4 +42,3 @@
     text-align: center;
     
 }
-
