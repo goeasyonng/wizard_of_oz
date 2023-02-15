@@ -45,10 +45,10 @@
     max-width:150px;
 }
 .of{
-   font-size: 40px; 
+   font-size: 27px; 
 }
 .oz{
-    font-size:60px;
+    font-size:55px;
 }
 .oz_logo{
     background-color:transparent;
@@ -57,5 +57,8 @@
 }
 h1{
     margin-bottom: 10px;
-    font-size: 45px;
+    font-size: 40px;
+}
+.start_info{
+    font-size: 20px;
 }
