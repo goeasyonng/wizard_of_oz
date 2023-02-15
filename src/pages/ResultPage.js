@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "../CSS/result.css";
 import styled from "styled-components";
@@ -143,7 +142,4 @@ export default function Result({ title, detail }) {
       </div>
     </div>
   );
-
 }
-
-export default Result;
