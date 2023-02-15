@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "../CSS/result.css";
 import styled from "styled-components";
@@ -59,11 +60,33 @@ export default function Result({ title, detail }) {
     });
   };
 
-  const handleKakaoButton = () => {
-    window.Kakao.Link.sendScrap({
-      requestUrl: currentUrl,
-    });
+  //버튼 클릭 이벤트가 발생했을 떄 시행되는 훅
+  const onClick = (option) => {
+    //선택에 따른 횟수와 결과문장을 담아두는 함수
+    if (option == "front") {
+      setFrontCount(frontCount + 1);
+      setResult([...result, questions[quizIndex].answerOptions[0].resultText]);
+    } else {
+      setBackCount(backCount + 1);
+      setResult([...result, questions[quizIndex].answerOptions[1].resultText]);
+    }
+
+    //총 페이지를 세어 마지막을 나타내는 함수
+    const nextQuiz = quizIndex + 1;
+
+    if (nextQuiz < questions.length) {
+      setQuizIndex(nextQuiz);
+    } else {
+      setEndPage(true);
+    }
   };
+
+  console.log("frontCount:", frontCount);
+  console.log("backCount:", backCount);
+  console.log(
+    "result",
+    result.map((item) => <text>{item}</text>)
+  );
 
   return (
     <div className="container">
@@ -120,4 +143,7 @@ export default function Result({ title, detail }) {
       </div>
     </div>
   );
+
 }
+
+export default Result;
