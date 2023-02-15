@@ -1,70 +1,68 @@
 .book {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+   position: relative;
    height: 100vh;
    background: #e0e4ee;
    perspective: 1000px;
-   padding-left: 25%;
+   overflow: hidden;
+}
+
+.bookList {
+   height: 520px;
+   position: absolute;
+   top: 85px;
+   left: 67%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 4s;
 }
 
 /* 앞면 */
 .coverFront {
+   width: 420px;
+   height: 550px;
    position: absolute;
-   width: 400px;
-   height: 75%;
-   background-image: url(../img/wizard-oz-book.png);
+   background-image: url(../image/wizard-oz-book.png);
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: center;
    box-shadow: 1px 1px 10px #2d2d2e;
-   transform: rotateX(20deg);
+   transform: rotateX(22deg);
 }
 
-.coverFront .title {
-   position: absolute;
-   top: 65%;
-   left: 40%;
-   text-align: center;
-   color: #ece5b5;
-}
 /* 앞면 끝 */
 
 /* 중간페이지 */
 
-.page,
+/* 배경색.. */
+.page {
+   background-color: #fff;
+}
 .lastPage {
    background-color: #fff;
-   width: 380px;
-   height: 70%;
+}
+
+.page,
+.lastPage {
+   width: 420px;
+   height: 530px;
    position: absolute;
-   transform: rotateX(20deg);
+   transform: rotateX(22deg);
    transform-origin: center left;
-   z-index: -1;
 }
 
 /* 중간페이지 끝 */
 
 /* 마지막 뒷면 */
 .coverBack {
-   width: 400px;
-   height: 75%;
+   width: 420px;
+   height: 550px;
    background-color: #2d2d2e;
    position: absolute;
    box-shadow: 1px 1px 10px #2d2d2e;
-   transform: rotateX(20deg);
+   transform: rotateX(22deg);
 }
 /* 마지막 뒷면 끝 */
-
-/* 책 전체 호버 시 */
-.book:hover .coverFront {
-   transform: rotateX(20deg) rotateY(-180deg);
-}
-
-.book:hover .page {
-   transform: rotateX(20deg) rotateY(-180deg);
-   z-index: 2;
-}
 
 /* 중간페이지 페이지넘김 효과 */
 .page:nth-child(2) {
@@ -84,10 +82,10 @@
 }
 
 .book:hover .page:nth-child(2) {
-   transition-duration: 6s;
+   transition-duration: 5.2s;
 }
 .book:hover .page:nth-child(3) {
-   transition-duration: 5.5s;
+   transition-duration: 5.3s;
 }
 .book:hover .page:nth-child(4) {
    transition-duration: 5s;
@@ -99,11 +97,15 @@
    transition-duration: 4s;
 }
 
+.book:hover .lastPage {
+   transition-duration: 3s;
+}
+
 /* z-index 설정 */
 
 .coverFront {
    transition: all 4s;
-   z-index: 1;
+   z-index: 5;
    transform-origin: center left;
 }
 
@@ -111,6 +113,96 @@
    z-index: -2;
 }
 
-.lastPage h2 {
+.page {
+   z-index: 1;
+}
+
+.imagePage {
+   z-index: 0;
+}
+
+.lastPage {
    z-index: -1;
+}
+
+/* 책 전체 호버 시 */
+.book:hover .coverFront {
+   z-index: -1;
+   transform: rotateX(22deg) rotateY(-180deg);
+}
+
+.book:hover .page {
+   transform: rotateX(22deg) rotateY(-180deg);
+   z-index: 4;
+}
+
+.book:hover .lastPage {
+   z-index: 1;
+}
+
+.book:hover .imagePage {
+   z-index: 5;
+}
+
+/* 마지막 정면으로 바라보기.. */
+.book:hover .bookList {
+   transition: all 4s;
+   transition-duration: 3s;
+   scale: 1.2;
+}
+
+/* 컴포넌트 페이지내 적용.. */
+
+.imagePage {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 420px;
+   height: 530px;
+   position: absolute;
+   transform: rotateX(22deg);
+   transform-origin: center left;
+   background-color: #fff;
+   transition-duration: 2s;
+   border-left: 1px solid rgba(0, 0, 0, 0.079);
+}
+
+.book:hover .imagePage {
+   z-index: 5;
+   position: absolute;
+   transition-duration: 6s;
+   transform: rotateX(22deg) rotateY(-180deg);
+}
+
+.rightPage {
+   position: absolute;
+   right: 0%;
+   z-index: -1;
+   width: 400px;
+   height: 530px;
+   transition-duration: 4s;
+   transform: rotateY(180deg);
+}
+
+.book:hover .rightPage {
+   transform: rotateY(180deg);
+   z-index: 1;
+   position: absolute;
+   top: 0;
+}
+
+/* progress */
+.progress__bar {
+   opacity: 0;
+   position: absolute;
+   left: 57%;
+   top: 10%;
+}
+
+.book:hover .progress__bar {
+   position: absolute;
+   left: 57%;
+   top: 10%;
+   transition-duration: 8s;
+   opacity: 1;
 }

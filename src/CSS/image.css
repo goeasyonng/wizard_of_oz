@@ -1,0 +1,15 @@
+.images {
+   z-index: -1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 400px;
+   height: 500px;
+   font-family: 'SANGJUGyeongcheonIsland';
+   font-size: 1.3rem;
+   color: #000;
+   background: #fff;
+   padding: 0 30px;
+   text-align: center;
+   transform: rotateY(-180deg);
+}

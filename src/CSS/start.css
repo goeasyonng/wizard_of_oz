@@ -1,0 +1,57 @@
+@import 'https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css';
+
+@font-face {
+   font-family: 'SANGJUGyeongcheonIsland';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/SANGJUGyeongcheonIsland.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.book__coverpage {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   margin: auto;
+   font-family: 'SANGJUGyeongcheonIsland';
+   font-size: 25px;
+   background-color: #222;
+   color: white;
+}
+
+.start_button {
+   font-family: 'Roboto';
+   min-width: 375px;
+   width: 100%;
+   border: #fff;
+   padding: 10px;
+   border-radius: 10px;
+   margin-top: 16px;
+   margin-bottom: 10px;
+   text-align: center;
+   background: white;
+   color: #444;
+   cursor: pointer;
+   font-size: 20px;
+   font-weight: bold;
+}
+.App-logo {
+   max-width: 150px;
+}
+.of {
+   font-size: 40px;
+}
+.oz {
+   font-size: 60px;
+}
+.oz_logo {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+}
+h1 {
+   margin-bottom: 10px;
+   font-size: 45px;
+}
