@@ -59,33 +59,11 @@ export default function Result({ title, detail }) {
     });
   };
 
-  //버튼 클릭 이벤트가 발생했을 떄 시행되는 훅
-  const onClick = (option) => {
-    //선택에 따른 횟수와 결과문장을 담아두는 함수
-    if (option == "front") {
-      setFrontCount(frontCount + 1);
-      setResult([...result, questions[quizIndex].answerOptions[0].resultText]);
-    } else {
-      setBackCount(backCount + 1);
-      setResult([...result, questions[quizIndex].answerOptions[1].resultText]);
-    }
-
-    //총 페이지를 세어 마지막을 나타내는 함수
-    const nextQuiz = quizIndex + 1;
-
-    if (nextQuiz < questions.length) {
-      setQuizIndex(nextQuiz);
-    } else {
-      setEndPage(true);
-    }
+  const handleKakaoButton = () => {
+    window.Kakao.Link.sendScrap({
+      requestUrl: currentUrl,
+    });
   };
-
-  console.log("frontCount:", frontCount);
-  console.log("backCount:", backCount);
-  console.log(
-    "result",
-    result.map((item) => <text>{item}</text>)
-  );
 
   return (
     <div className="container">
@@ -104,7 +82,7 @@ export default function Result({ title, detail }) {
 
         <div className="shareContainer">
           <div className="share">
-            <span>친구들에게 결과를 공유하기</span>
+            <div>친구들에게 결과를 공유하기</div>
           </div>
 
           <div className="shareBtn">
