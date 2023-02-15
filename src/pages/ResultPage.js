@@ -72,9 +72,9 @@ export default function Result({ title, detail }) {
           <div className="result_img_1"></div>
         </div>
 
-        <div className="title">{title} </div>
+        <div className="title_1">{title} </div>
 
-        <div className="text_box">
+        <div className="txt_box">
           {detail.map((item) => (
             <div className="result_txt">{item}</div>
           ))}

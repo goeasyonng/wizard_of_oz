@@ -9,102 +9,91 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
+.book__coverpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: auto;
+  font-family: "SANGJUGyeongcheonIsland";
+  font-size: 25px;
+}
+.content__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.book__typewriter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start_button {
+  font-family: "Roboto";
+  min-width: 375px;
+  width: 100%;
+  border: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-bottom: 10px;
+  text-align: center;
+  background: #ffff;
+  color: #444;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.App-logo {
+  max-width: 150px;
+}
+.of {
+  font-size: 40px;
+}
+.oz {
+  font-size: 60px;
+}
+.oz_logo {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 45px;
+}
+
 @media (max-width: 768px) {
   .book__coverpage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
-    font-family: "SANGJUGyeongcheonIsland";
-    font-size: 25px;
-    background-color: #222;
-    color: white;
+    /* background-color: #222; */
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(58, 24, 24);
   }
-
-  .start_button {
-    font-family: "Roboto";
-    min-width: 375px;
-    width: 100%;
-    border: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    text-align: center;
-    background: #ffff;
-    color: #444;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+  .book__guide {
+    margin-top: 150px;
   }
-  .App-logo {
-    max-width: 150px;
-  }
-  .of {
-    font-size: 40px;
-  }
-  .oz {
-    font-size: 60px;
-  }
-  .oz_logo {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  h1 {
-    margin-bottom: 10px;
-    font-size: 45px;
+  .brand_logo {
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 769px) {
   .book__coverpage {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
-    font-family: "SANGJUGyeongcheonIsland";
-    font-size: 25px;
     background-color: #222;
-    color: white;
+    color: rgb(253, 253, 253);
   }
-
-  .start_button {
-    font-family: "Roboto";
-    min-width: 375px;
-    width: 100%;
-    border: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 16px;
-    margin-bottom: 10px;
-    text-align: center;
-    background: #ffff;
-    color: #444;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: bold;
+  .book__guide {
+    margin-top: 80px;
   }
-  .App-logo {
-    max-width: 150px;
-  }
-  .of {
-    font-size: 40px;
-  }
-  .oz {
-    font-size: 60px;
-  }
-  .oz_logo {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-  }
-  h1 {
-    margin-bottom: 10px;
-    font-size: 45px;
+  .brand_logo {
+    margin-top: 30px;
   }
 }

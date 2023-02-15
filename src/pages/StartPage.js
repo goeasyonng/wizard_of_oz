@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom"; // request react-router-dom librasy install
+import "../CSS/start.css";
 
 export default function BookQuiz() {
   const handleClick = (e) => {
@@ -11,11 +12,13 @@ export default function BookQuiz() {
     <div className="book">
       <div className="book__coverpage">
         <h1 className="content__title">
-          DEVELOPER <span className="of">OF</span>{" "}
-          <span className="oz">OZ</span>
+          <div>DEVELOPER</div>
+          <div className="of">OF</div>
+          <div className="oz">OZ</div>
         </h1>
         <div className="book__typewriter">
-          <p className="start_info">오즈의 마법같은 개발자 성향 테스트 !!</p>
+          <p className="start_info">오즈의 마법같은</p>
+          <p className="start_info">개발자 성향 테스트 !!</p>
         </div>
 
         <Link className="book__guide" to="/Question">

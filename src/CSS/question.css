@@ -7,51 +7,78 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 
-.answer_button {
-  font-family: "Roboto";
-  max-width: 360px;
-  width: 100%;
-  border: white;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 40px;
-  text-align: center;
-  background: white;
-  color: #666;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: bold;
-}
-.text__page {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  height: 100vh;
-  margin-top: 100px;
-  font-family: "SANGJUGyeongcheonIsland";
-  font-size: 20px;
-  /* background-color: #6d95e9; */
-
-  color: #fff;
-  text-align: center;
-}
 @media (max-width: 768px) {
+  .imgs {
+    width: 60%;
+    height: 60%;
+    margin: 50px auto;
+    border-radius: 20px;
+  }
+  .lastPage {
+    margin: auto;
+    width: 80%;
+  }
+  .question__title {
+    margin: 25px auto;
+    font-size: large;
+    font-family: "SANGJUGyeongcheonIsland";
+    width: 70%;
+    height: 30%;
+    background-color: beige;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+  }
+  .question__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .question__btn {
+    margin: 5px;
+    font-size: medium;
+    font-family: "SANGJUGyeongcheonIsland";
+    background-color: beige;
+    border: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    width: 70%;
+  }
+  .answer_button {
+    font-family: "Roboto";
+    max-width: 360px;
+    width: 100%;
+    border: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+    text-align: center;
+    background: white;
+    color: #666;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: bold;
+  }
   .text__page {
-    background-image: url(../img/background.jpg);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+    font-family: "SANGJUGyeongcheonIsland";
+    font-size: 20px;
+    /* background-color: #6d95e9; */
+    background-image: url(../image/background.jpg);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+    color: #fff;
+    text-align: center;
   }
 }
 
 @media (min-width: 769px) {
-  .text__page {
-    background-image: url(../img/background.jpg);
-    /* background-repeat: no-repeat; */
-    background-position: top center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
 }
