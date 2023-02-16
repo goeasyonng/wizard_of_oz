@@ -54,7 +54,7 @@ function Questions({ getData }) {
 
   return (
     <>
-      <ProgressBar
+      <ProgressBar className="progress"
         completed={Math.floor((quizIndex / questions.length) * 100)}
         bgColor="white"
         baseBgColor="#6D95E9"

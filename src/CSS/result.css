@@ -9,28 +9,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
 .title_1 {
-  font-size: 30px;
-  text-align: center;
+ 
+  
   border-radius: 10px;
   padding: 30px;
+  width: 100%;
   font-weight: bold;
-  color: white;
+  color: rgb(9, 7, 3);
   font-family: "SANGJUGyeongcheonIsland";
+ 
 }
 
-.title_2 {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-  border-radius: 20px;
-  padding: 30px;
-  font-weight: bold;
-  font-family: "SANGJUGyeongcheonIsland";
-}
 .img_box {
   display: flex;
   justify-content: center;
+  width: 100%;
   margin: 30px;
+  max-width: 300px;
+  margin:auto;
+  margin-top: 10px;
 }
 .result_img_1 {
   background-color: white;
@@ -40,6 +37,7 @@
   width: 100%;
   height: 200px;
   padding: 50px;
+   margin: auto;
 }
 .result_img_2 {
   background-color: white;
@@ -49,6 +47,8 @@
   width: 100%;
   height: 200px;
   padding: 50px;
+  max-width: 300px;
+   margin: auto;
 }
 
 .result_img_3 {
@@ -59,28 +59,44 @@
   width: 100%;
   height: 200px;
   padding: 50px;
+  max-width: 300px;
+   margin: auto;
 }
 
 .result_txt {
   text-align: center;
-  padding: 25px;
+  padding: 10px;
   font-family: "Jua", sans-serif;
+   margin: auto;
 }
 
 .txt_box {
   border-radius: 20px;
   margin: 30px;
+  padding: 30px 0px;
+  width: 100%;
   background-color: whitesmoke;
+  max-width: 300px;
+   margin: auto;
+   margin-bottom: 10px;
 }
 
 body {
-  background-color: #6d95e9;
+  /* background-color: #6d95e9; */
+  background-image: url(../image/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: "Roboto";
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+ 
 }
 
 li {
@@ -93,7 +109,8 @@ li {
   padding: 10px;
   font-weight: bold;
   height: 50px;
-  font-size: 29px;
+  width: 100%;
+  font-size: large;
   border-radius: 30px;
 }
 
@@ -101,4 +118,21 @@ li {
   display: flex;
   justify-content: center;
   padding-top: 30px;
+}
+.shareContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  width: 100%;
+  overflow: inherit;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+html,body{
+  overflow-x: hidden;
 }
