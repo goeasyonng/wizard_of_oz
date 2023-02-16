@@ -1,18 +1,18 @@
-import React, { useEffect, useState } from "react";
-import { questions } from "../data/QuizList";
-import { useNavigate } from "react-router-dom";
-import "../CSS/question.css";
-import "../CSS/flipbook.css";
-import ProgressBar from "@ramonak/react-progress-bar";
+import React, { useEffect, useState } from 'react';
+import { questions } from '../data/QuizList';
+import { useNavigate } from 'react-router-dom';
+import '../CSS/question.css';
+import '../CSS/flipbook.css';
+import ProgressBar from '@ramonak/react-progress-bar';
 
 function Questions({ getData }) {
-  const [quizIndex, setQuizIndex] = useState(0);
-  const [endPage, setEndPage] = useState(false);
-  const [frontCount, setFrontCount] = useState(0);
-  const [backCount, setBackCount] = useState(0);
-  const [result, setResult] = useState([]);
-  const [kind, setKind] = useState("");
-  const navigate = useNavigate();
+   const [quizIndex, setQuizIndex] = useState(0);
+   const [endPage, setEndPage] = useState(false);
+   const [frontCount, setFrontCount] = useState(0);
+   const [backCount, setBackCount] = useState(0);
+   const [result, setResult] = useState([]);
+   const [kind, setKind] = useState('');
+   const navigate = useNavigate();
 
   const onClick = (option) => {
     if (option == "front") {
@@ -37,21 +37,23 @@ function Questions({ getData }) {
       } else {
         setKind("당신에게 적합한 개발 영역은 풀스택입니다.");
       }
-    }
-  };
 
-  useEffect(() => {
-    getData(kind, result);
-  }, [kind]);
+      const nextQuiz = quizIndex + 1;
 
-  useEffect(() => {
-    if (kind && endPage) {
-      navigate(`/Result`);
-    }
-  }, [kind, endPage]);
+      if (nextQuiz < questions.length) {
+         setQuizIndex(nextQuiz);
+      } else {
+         setEndPage(true);
 
-  console.log("frontCount:", frontCount);
-  console.log("backCount:", backCount);
+         if (frontCount > backCount) {
+            setKind('프론트엔드입니다.');
+         } else if (frontCount < backCount) {
+            setKind('백엔드입니다.');
+         } else {
+            setKind('풀스택입니다.');
+         }
+      }
+   };
 
   return (
     <>
@@ -100,15 +102,12 @@ function Questions({ getData }) {
                       ))}
                     </div>
                   </div>
-                )}
-              </div>
+               </div>
+               <div className='coverBack'></div>
             </div>
-          </div>
-          <div className="coverBack"></div>
-        </div>
-      </div>
-    </>
-  );
+         </div>
+      </>
+   );
 }
 
 export default Questions;

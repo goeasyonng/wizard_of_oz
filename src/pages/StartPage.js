@@ -8,18 +8,18 @@ export default function BookQuiz() {
     console.log(target);
   };
 
-  return (
-    <div className="book">
-      <div className="book__coverpage">
-        <h1 className="content__title">
-          <div>DEVELOPER</div>
-          <div className="of">OF</div>
-          <div className="oz">OZ</div>
-        </h1>
-        <div className="book__typewriter">
-          <p className="start_info">오즈의 마법같은</p>
-          <p className="start_info">개발자 성향 테스트 !!</p>
-        </div>
+   return (
+      <div className='book_'>
+         <div className='book__coverpage'>
+            <h1 className='content__title'>
+               <div>DEVELOPER</div>
+               <div className='of'>OF</div>
+               <div className='oz'>OZ</div>
+            </h1>
+            <div className='book__typewriter'>
+               <span className='start_info'>오즈의 마법같은</span>
+               <span className='start_info'>개발자 성향 테스트 !!</span>
+            </div>
 
         <Link className="book__guide" to="/Question">
           <button className="start_button" onClick={handleClick}>
@@ -39,6 +39,5 @@ export default function BookQuiz() {
           </a>
         </div>
       </div>
-    </div>
-  );
+   );
 }
