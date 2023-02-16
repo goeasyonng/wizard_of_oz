@@ -31,11 +31,11 @@ function Questions({ getData }) {
       setEndPage(true);
 
       if (frontCount > backCount) {
-        setKind("당신에게 적합한 개발 영역은 프론트엔드입니다.");
+        setKind("프론트엔드입니다.");
       } else if (frontCount < backCount) {
-        setKind("당신에게 적합한 개발 영역은 백엔드입니다.");
+        setKind("백엔드입니다.");
       } else {
-        setKind("당신에게 적합한 개발 영역은 풀스택입니다.");
+        setKind("풀스택입니다.");
       }
     }
   };
@@ -56,7 +56,6 @@ function Questions({ getData }) {
   return (
     <>
       <div className="book">
-        {/* // 애니메이션만 적용! */}
         <div className="bookList">
           <div className="coverFront"></div>
           <div className="page"></div>
@@ -64,9 +63,7 @@ function Questions({ getData }) {
           <div className="page"></div>
           <div className="page"></div>
           <div className="page"></div>
-          {/* 애니메이션 끝 */}
 
-          {/* 컴포넌트 데이터 전달 */}
           <div className="imagePage">
             <img className="imgs" src={questions[quizIndex].url} />
           </div>

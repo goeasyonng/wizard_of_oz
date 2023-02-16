@@ -41,8 +41,8 @@
 }
 .start_button {
   font-family: "Roboto";
-  min-width: 375px;
-  width: 100%;
+  min-width: 300px;
+  width: 70%;
   border: #fff;
   padding: 10px;
   border-radius: 10px;
@@ -77,11 +77,13 @@ h1 {
 .users {
   margin-top: 30px;
   font-size: large;
-  color: orange;
+  color: #f2eee8;
   font-weight: bold;
   padding: 10px;
   font-family: "Noto Sans KR", sans-serif;
   border-radius: 3px;
+  background-color: #f7a20f;
+  border-radius: 10px;
 }
 
 @media (max-width: 821px) {

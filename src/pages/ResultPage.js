@@ -72,7 +72,10 @@ export default function Result({ title, detail }) {
           <div className="result_img_1"></div>
         </div>
 
-        <div className="title_1">{title} </div>
+        <div className="title">
+          <div>당신에게 어울리는 개발 영역은</div>
+          <div>{title}</div>{" "}
+        </div>
 
         <div className="txt_box">
           {detail.map((item) => (
