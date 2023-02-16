@@ -8,14 +8,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
 
-.title_1 {
+.book__textpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
   font-size: 30px;
   text-align: center;
-  border-radius: 10px;
   padding: 30px;
-  width: 100%;
   font-weight: bold;
-  color: rgb(97, 68, 21);
+  color: rgb(70, 45, 5);
   font-family: "SANGJUGyeongcheonIsland";
 }
 
@@ -83,10 +87,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 li {
   padding: 10px 30px;
-  /* list-style: none; */
   font-size: 16px;
 }
 .share {
@@ -115,4 +117,27 @@ li {
   padding: 20px;
   width: 95%;
   overflow: inherit;
+}
+
+@media (max-width: 821px) {
+  .img_box {
+    width: 330px;
+    margin: 30px;
+  }
+  .title {
+    font-size: large;
+  }
+  .result_txt {
+    padding: 5px;
+  }
+  .txt_box {
+    width: 270px;
+    padding: 30px;
+  }
+  .shareContainer {
+    width: 300px;
+  }
+}
+
+@media (min-width: 822px) {
 }

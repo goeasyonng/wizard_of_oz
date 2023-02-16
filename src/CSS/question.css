@@ -14,18 +14,22 @@
     align-items: center;
   }
   .imgs {
-    width: 60%;
-    height: 60%;
-    margin: 50px auto;
+    width: 50%;
+    height: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
     border-radius: 20px;
   }
-
+  .rightPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .progress {
-    margin: auto;
     width: 80%;
   }
   .question__title {
-    margin: 25px auto;
+    margin: 40px auto;
     font-size: large;
     font-family: "SANGJUGyeongcheonIsland";
     width: 70%;
@@ -43,7 +47,7 @@
   }
   .question__btn {
     margin: 5px;
-    font-size: medium;
+    font-size: small;
     font-family: "SANGJUGyeongcheonIsland";
     background-color: beige;
     border: #fff;

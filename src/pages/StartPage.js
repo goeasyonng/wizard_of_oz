@@ -44,15 +44,15 @@ export default function BookQuiz() {
             시작하기
           </button>
         </Link>
-        <p className="users">{total}명이 테스트에 참가 했습니다</p>
+        <p className="users">{total} 명이 테스트에 참여했습니다</p>
         <div className="brand_logo">
           <a href="https://ozcodingschool.com/" target="_blank">
             <button className="oz_logo">
-              <img
+              {/* <img
                 src={`${process.env.PUBLIC_URL}/ozcoding_logo.png`}
                 className="App-logo"
                 alt="React"
-              />
+              /> */}
             </button>
           </a>
         </div>
