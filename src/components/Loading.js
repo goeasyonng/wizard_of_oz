@@ -3,8 +3,8 @@ import '../CSS/loading.css';
 
 export default function Loading() {
    return (
-      <div>
-         <svg x='0' y='0' width='258' height='258'>
+      <div className='contents'>
+         <svg className='svg' x='0' y='0' width='258' height='258'>
             <g clip-path='url(#clip-path)'>
                <path
                   class='tree'
