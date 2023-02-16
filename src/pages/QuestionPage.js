@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { questions } from "../data/QuizList";
 import { useNavigate } from "react-router-dom";
 import "../CSS/question.css";
+import "../CSS/flipbook.css";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 function Questions({ getData }) {
@@ -30,11 +31,11 @@ function Questions({ getData }) {
       setEndPage(true);
 
       if (frontCount > backCount) {
-        setKind("당신에게 적합한 개발 영역은 프론트엔드입니다.");
+        setKind("프론트엔드입니다.");
       } else if (frontCount < backCount) {
-        setKind("당신에게 적합한 개발 영역은 백엔드입니다.");
+        setKind("백엔드입니다.");
       } else {
-        setKind("당신에게 적합한 개발 영역은 풀스택입니다.");
+        setKind("풀스택입니다.");
       }
     }
   };
@@ -54,7 +55,7 @@ function Questions({ getData }) {
 
   return (
     <>
-      <ProgressBar className="progress"
+      <ProgressBar
         completed={Math.floor((quizIndex / questions.length) * 100)}
         bgColor="white"
         baseBgColor="#6D95E9"

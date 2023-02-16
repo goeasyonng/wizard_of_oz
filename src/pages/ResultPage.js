@@ -66,57 +66,12 @@ export default function Result({ title, detail }) {
   };
 
   return (
-    <div className="container">
-      <div className="book__text page">
-        <div className="img_box">
-          <div className="result_img_1"></div>
-        </div>
-
-        <div className="title_1">{title} </div>
-
-        <div className="txt_box">
-          {detail.map((item) => (
-            <div className="result_txt">{item}</div>
-          ))}
-        </div>
-
-        <div className="shareContainer">
-          <div className="share">
-            <div>친구들에게 결과를 공유하기</div>
-          </div>
-
-          <div className="shareBtn">
-            <FacebookShareButton
-              style={{ marginRight: "20px" }}
-              url={"https://www.naver.com/"}
-            >
-              <FacebookIcon
-                size={48}
-                round={true}
-                borderRadius={24}
-              ></FacebookIcon>
-            </FacebookShareButton>
-
-            <TwitterShareButton
-              style={{ marginRight: "20px" }}
-              url={"https://twitter.com/?lang=ko"}
-            >
-              <TwitterIcon
-                size={48}
-                round={true}
-                borderRadius={24}
-              ></TwitterIcon>
-            </TwitterShareButton>
-
-            <KakaoShareButton onClick={shareKakao}>
-              <KakaoIcon src={kakaoLogo}></KakaoIcon>
-            </KakaoShareButton>
-
-            <CopyToClipboard text="https://www.naver.com/">
-              <URLShareButton>URL</URLShareButton>
-            </CopyToClipboard>
-          </div>
-        </div>
+    <div>
+      <div>{title} </div>
+      <div>
+        {detail.map((item) => (
+          <div>{item}</div>
+        ))}
       </div>
     </div>
   );

@@ -1,116 +1,264 @@
-.book {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   background: #e0e4ee;
-   perspective: 1000px;
-   padding-left: 25%;
+@media (max-width: 821px) {
 }
 
-/* 앞면 */
-.coverFront {
-   position: absolute;
-   width: 400px;
-   height: 75%;
-   background-image: url(../img/wizard-oz-book.png);
-   background-repeat: no-repeat;
-   background-size: 100%;
-   background-position: center;
-   box-shadow: 1px 1px 10px #2d2d2e;
-   transform: rotateX(20deg);
-}
+@media (min-width: 822px) {
+  .book {
+    position: relative;
+    height: 100vh;
+    background-image: url(../image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    perspective: 1000px;
+    overflow: hidden;
+  }
 
-.coverFront .title {
-   position: absolute;
-   top: 65%;
-   left: 40%;
-   text-align: center;
-   color: #ece5b5;
-}
-/* 앞면 끝 */
+  .bookList {
+    height: 520px;
+    position: absolute;
+    top: 85px;
+    left: 67%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 4s;
+  }
 
-/* 중간페이지 */
+  /* 앞면 */
+  .coverFront {
+    width: 420px;
+    height: 550px;
+    position: absolute;
+    background-image: url(../image/wizard-oz-book.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 1px 1px 10px #2d2d2e;
+    transform: rotateX(22deg);
+  }
 
-.page,
-.lastPage {
-   background-color: #fff;
-   width: 380px;
-   height: 70%;
-   position: absolute;
-   transform: rotateX(20deg);
-   transform-origin: center left;
-   z-index: -1;
-}
+  /* 앞면 끝 */
 
-/* 중간페이지 끝 */
+  /* 중간페이지 */
 
-/* 마지막 뒷면 */
-.coverBack {
-   width: 400px;
-   height: 75%;
-   background-color: #2d2d2e;
-   position: absolute;
-   box-shadow: 1px 1px 10px #2d2d2e;
-   transform: rotateX(20deg);
-}
-/* 마지막 뒷면 끝 */
+  /* 배경색.. */
+  .page {
+    background-color: #fff;
+  }
+  .lastPage {
+    background-color: #fff;
+  }
 
-/* 책 전체 호버 시 */
-.book:hover .coverFront {
-   transform: rotateX(20deg) rotateY(-180deg);
-}
+  .page,
+  .lastPage {
+    width: 420px;
+    height: 530px;
+    position: absolute;
+    transform: rotateX(22deg);
+    transform-origin: center left;
+  }
 
-.book:hover .page {
-   transform: rotateX(20deg) rotateY(-180deg);
-   z-index: 2;
-}
+  /* 중간페이지 끝 */
 
-/* 중간페이지 페이지넘김 효과 */
-.page:nth-child(2) {
-   transition-duration: 4s;
-}
-.page:nth-child(3) {
-   transition-duration: 3.7s;
-}
-.page:nth-child(4) {
-   transition-duration: 3.4s;
-}
-.page:nth-child(5) {
-   transition-duration: 3.1s;
-}
-.page:nth-child(6) {
-   transition-duration: 2.8s;
-}
+  /* 마지막 뒷면 */
+  .coverBack {
+    width: 420px;
+    height: 550px;
+    background-color: #2d2d2e;
+    position: absolute;
+    box-shadow: 1px 1px 10px #2d2d2e;
+    transform: rotateX(22deg);
+  }
+  /* 마지막 뒷면 끝 */
 
-.book:hover .page:nth-child(2) {
-   transition-duration: 6s;
-}
-.book:hover .page:nth-child(3) {
-   transition-duration: 5.5s;
-}
-.book:hover .page:nth-child(4) {
-   transition-duration: 5s;
-}
-.book:hover .page:nth-child(5) {
-   transition-duration: 4.5s;
-}
-.book:hover .page:nth-child(6) {
-   transition-duration: 4s;
-}
+  /* 중간페이지 페이지넘김 효과 */
+  .page:nth-child(2) {
+    transition-duration: 4s;
+  }
+  .page:nth-child(3) {
+    transition-duration: 3.7s;
+  }
+  .page:nth-child(4) {
+    transition-duration: 3.4s;
+  }
+  .page:nth-child(5) {
+    transition-duration: 3.1s;
+  }
+  .page:nth-child(6) {
+    transition-duration: 2.8s;
+  }
 
-/* z-index 설정 */
+  .book:hover .page:nth-child(2) {
+    transition-duration: 5.2s;
+  }
+  .book:hover .page:nth-child(3) {
+    transition-duration: 5.3s;
+  }
+  .book:hover .page:nth-child(4) {
+    transition-duration: 5s;
+  }
+  .book:hover .page:nth-child(5) {
+    transition-duration: 4.5s;
+  }
+  .book:hover .page:nth-child(6) {
+    transition-duration: 4s;
+  }
 
-.coverFront {
-   transition: all 4s;
-   z-index: 1;
-   transform-origin: center left;
-}
+  .book:hover .lastPage {
+    transition-duration: 3s;
+  }
 
-.coverBack {
-   z-index: -2;
-}
+  /* z-index 설정 */
 
-.lastPage h2 {
-   z-index: -1;
+  .coverFront {
+    transition: all 4s;
+    z-index: 5;
+    transform-origin: center left;
+  }
+
+  .coverBack {
+    z-index: -2;
+  }
+
+  .page {
+    z-index: 1;
+  }
+
+  .imagePage {
+    z-index: 0;
+  }
+
+  .lastPage {
+    z-index: -1;
+  }
+
+  /* 책 전체 호버 시 */
+  .book:hover .coverFront {
+    z-index: -1;
+    transform: rotateX(22deg) rotateY(-180deg);
+  }
+
+  .book:hover .page {
+    transform: rotateX(22deg) rotateY(-180deg);
+    z-index: 4;
+  }
+
+  .book:hover .lastPage {
+    z-index: 1;
+  }
+
+  .book:hover .imagePage {
+    z-index: 5;
+  }
+
+  /* 마지막 정면으로 바라보기.. */
+  .book:hover .bookList {
+    transition: all 4s;
+    transition-duration: 3s;
+    scale: 1.2;
+  }
+
+  /* 컴포넌트 페이지내 적용.. */
+
+  .imagePage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 530px;
+    position: absolute;
+    transform: rotateX(22deg);
+    transform-origin: center left;
+    background-color: #fff;
+    transition: all 5s;
+    border-left: 1px solid rgba(0, 0, 0, 0.079);
+    z-index: -3;
+  }
+
+  .book:hover .imagePage {
+    z-index: 5;
+    position: absolute;
+    transition-duration: 6s;
+    transform: rotateX(22deg) rotateY(-180deg);
+  }
+
+  .rightPage {
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+    width: 400px;
+    height: 530px;
+    transition-duration: 4s;
+    transform: rotateY(180deg);
+  }
+
+  .book:hover .rightPage {
+    transform: rotateY(180deg);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+  }
+
+  .progress {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    margin: 0 auto;
+    transform: rotateY(180deg);
+  }
+
+  .question__page {
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 530px;
+    font-family: "SANGJUGyeongcheonIsland";
+    font-size: 1.3rem;
+    color: #000;
+    text-align: center;
+    transform: rotateY(-180deg);
+  }
+
+  .question__title {
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .question__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+  }
+
+  .question__btn {
+    cursor: pointer;
+    border: 0.3px solid #2d2d2e;
+    margin: 15px 20px 10px 0;
+    font-weight: 500;
+    text-align: center;
+    width: 300px;
+    line-height: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 7px;
+    transition: all 0.2s;
+    box-shadow: 0px 5px 0px 0px #b7b7b7;
+  }
+
+  .question__btn:hover {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 0px 0px #a5a7a6;
+  }
+
+  .imgs {
+    z-index: 5;
+    width: 400px;
+    height: 530px;
+  }
 }
