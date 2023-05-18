@@ -1,4 +1,4 @@
-# developer test
+# 개발자 성향 테스트
 
 2023.02.23 ~ 2023.02.26
 
@@ -34,6 +34,6 @@ React, render
 
 ---
 
-## 서비스 실행화면
+## 서비스 주소
 
 - https://fluffy-parfait-861a02.netlify.app
