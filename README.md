@@ -1,76 +1,70 @@
-# Getting Started with Create React Appp
+# minipetpee-backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2021.07 ~ 2021.09
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 서비스 소개
 
-### `npm start`
+![minipetpee](docs/images/minipetpee-logo.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 싸이월드 느낌의 펫 소셜 네트워크 서비스
+- 반려동물 전용 미니홈피
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 팀 소개
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 정윤정(팀장) [@cyj199637](https://github.com/cyj199637)
+- 김나연 [@nayeonkim](https://github.com/nayeonkiim)
+- 구다희 [@dadahee](https://github.com/dadahee)
 
-### `npm run build`
+---
 
+## 기능
 
+- 메인: 인기글 / 게시글 검색 / 회원 검색
+- 회원: 온보딩 / 마이페이지 / 커스텀 프로필
+- 홈피: 프로필 / 대문사진 / 최신 게시글 / 방문자수 / 공생평(일촌평)
+- 방명록: 공개 여부 설정 가능
+- 앨범 & 게시글: 공개 여부 설정 가능 / 덧글 / 사진 업로드
+- 스타 & 팬: 팔로잉, 팔로우 / 목록 확인
 
+---
 
+## 기술 스택
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Spring boot, Spring Data JPA, Spring Security, Swagger, H2, AWS ELB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 서비스 아키텍쳐
 
-### `npm run eject`
-wwww
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![minipetpee-architecture](docs/images/minipetpee-architecture.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## DataBase Modeling
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![minipetpee-modeling](docs/images/minipetpee-modeling.png)
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 프로젝트 관리 문서
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [협업 규칙](docs/rule/cooperation_rules.md)
+- [기능 명세서](docs/functional_spec/기능_명세서.pdf)
+- [API 설계](docs/api/design)
+- [API 명세서 (Swagger)](docs/api/spec)
 
-### Code Splitting
+---
 
+## 서비스 실행화면
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- [스크린샷](docs/screenshot/미니펫피_최종_결과.pdf)
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 프론트엔드
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [j2kb-minipetpee/frontend](https://github.com/j2kb-minipetpee/frontend)
