@@ -34,6 +34,6 @@ React, render
 
 ---
 
-## 서비스 주소
+## 서비스
 
 - https://fluffy-parfait-861a02.netlify.app
