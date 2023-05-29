@@ -30,7 +30,7 @@
 
 ## 기술 스택
 
-React, render
+React
 
 ---
 
